@@ -44,12 +44,12 @@ if($stmt->rowCount() >= 1){
          $mailer->Host = 'smtp.office365.com';
          $mailer->SMTPAuth = true;
          $mailer->SMTPSecure = 'tls';
-         $mailer->Username = 'leads@newton.ag';
-         $mailer->Password = '#L_3!aD5!2o2o@';
-         $mailer->setFrom('leads@newton.ag',);
-         // $mailer->addAddress('victor@newton.ag');
-         // $mailer->addAddress('ton@newton.ag');
-         $mailer->addAddress('gabriel.rangel@newton.ag');
+         $mailer->Username = '';
+         $mailer->Password = '';
+         $mailer->setFrom('',);
+         // $mailer->addAddress('');
+         // $mailer->addAddress('');
+         $mailer->addAddress('');
          $mailer->Subject = 'BOM - DIA!';
          $mailer->CharSet = 'UTF-8';
          $mailer->Body = $html;
